@@ -78,12 +78,14 @@ h3 {
 
 .btn:hover {background: #eee;}
 
-.link {
-    color:#777;
-    font: "Lato", sans-serif;
-    letter-spacing: 10px;
-    font-size: 120%;
-    text-decoration:none;
+@media (min-device-width: 1024px){
+    .link {
+        color:#777;
+        font-size: 2vw;
+        font: "Lato", sans-serif;
+        letter-spacing: 10px;
+        text-decoration:none;
+    }
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -91,6 +93,14 @@ h3 {
   .bgimg-1, .bgimg-11, .bgimg-13 {
     background-attachment: scroll;
   }
+  .link {
+    color:#777;
+    font-size: 3vw;
+    font: "Lato", sans-serif;
+    letter-spacing: 5px;
+    text-decoration:none;
+  }
+
 }
 </style>
 </head>

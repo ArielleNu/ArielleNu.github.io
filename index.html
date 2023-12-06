@@ -113,12 +113,14 @@ body, html {
 
 .btn:hover {background: #eee;}
 
-.link {
-    color:#777;
-    font-size: 120%;
-    font: "Lato", sans-serif;
-    letter-spacing: 10px;
-    text-decoration:none;
+@media (min-device-width: 1024px){
+    .link {
+        color:#777;
+        font-size: 2vw;
+        font: "Lato", sans-serif;
+        letter-spacing: 10px;
+        text-decoration:none;
+    }
 }
 
 h3 {
@@ -132,6 +134,13 @@ h3 {
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
     background-attachment: scroll;
+  }
+  .link {
+    color:#777;
+    font-size: 2vw;
+    font: "Lato", sans-serif;
+    letter-spacing: 10px;
+    text-decoration:none;
   }
 }
 </style>

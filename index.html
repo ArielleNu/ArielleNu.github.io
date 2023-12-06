@@ -9,7 +9,16 @@ body, html {
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-7, .bgimg-8 {
+.fade-in {
+    opacity:0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -44,6 +53,11 @@ body, html {
   min-height: 100%;
 }
 
+.bgimg-6 {
+  background-image: url("img/img_parallax6.jpg");
+  min-height: 100%;
+}
+
 .bgimg-7 {
   background-image: url("img/img_parallax7.jpg");
   min-height: 100%;
@@ -51,6 +65,11 @@ body, html {
 
 .bgimg-8 {
   background-image: url("img/img_parallax8.jpg");
+  min-height: 100%;
+}
+
+.bgimg-9 {
+  background-image: url("img/img_parallax9.jpg");
   min-height: 100%;
 }
 
@@ -71,6 +90,35 @@ body, html {
   letter-spacing: 10px;
 }
 
+.pagebutton {
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding-top: 2%;
+  padding-left:30%;
+  padding-right:30%;
+  padding-bottom: 5%;
+}
+
+.btn {
+  border-style: solid;
+  border-color: #777;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: aliceblue;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {background: #eee;}
+
+.link {
+    color:#777;
+    font-size: 120%;
+    font: "Lato", sans-serif;
+    letter-spacing: 10px;
+    text-decoration:none;
+}
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -80,7 +128,7 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-7, .bgimg-8 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
     background-attachment: scroll;
   }
 }
@@ -94,7 +142,7 @@ h3 {
   </div>
 </div>
 
-<div style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<div class="fade-in" style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Background</h3>
   <p>To me, Sheepshead Bay is home. It is the place in which I took my first steps, the 
       place to which I have gone home to after school every day, the place in which I was 
@@ -126,7 +174,7 @@ h3 {
     </div>
 </div>
 
-<div style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<div class="fade-in" style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
     <p>We continued to go to MOMO Hibachi Steakhouse, however. The unique show and close
         proximity to my house makes it an appropriate birthday destination, especially
         after my new baby cousins were brought into the world. The beating heart made of
@@ -143,7 +191,7 @@ h3 {
     </div>
   </div>
 
-  <div style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <div class="fade-in" style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
     <p>Sheepshead Bay isn't just about the food. Around 5 blocks inward of the bay is a park.
         Only 2 blocks away from my house, Bill Brown Park was where I grew up. Every morning
         during the summer or on weekends, my grandmother would take my brother and I to this park.
@@ -157,7 +205,7 @@ h3 {
         for the fact that we were all together.<br><br>I was often the only girl in the bunch, but 
         that, too, didn't seem to matter. Once in a while, one of my female friends would want to
         come, and other times, someone's little sister might've tried to join. Regardless, I was 
-        treated like of them. We were all the same, but different.
+        treated like of them. We were all equal, but different.
     </p>
   </div>
 
@@ -167,9 +215,9 @@ h3 {
     </div>
   </div>
 
-  <div style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <div class="fade-in" style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
     <p>Coming back to that park during high school was a completely different experience. There 
-        were no more arranged get-togethers amongst friends groups. It was only spur of the moment
+        were no more arranged get-togethers amongst friend groups. It was only spur of the moment
         decisions to come to the park to kill time. The park suddenly wasn't so big anymore. I got 
         bigger and the park got smaller, at least it seemed that way. The long run from one end of 
         the soccer field to the other wasn't so long anymore. The reconstruction of the playground
@@ -183,18 +231,53 @@ h3 {
         pre-k in the Manhattan Beach neighborhood, but even after starting elementary school, these
         walks continued, just less frequently. The wooden blue bridge separates the two neighborhoods:
         Sheepshead Bay and Manhattan Beach. Walking home from pre-k, I was fearful of the bridge. Old
-        and under reconstruction, I was always scared I would somehow manage to fall into one of cracks,
+        and under reconstruction, the bridge caused me to always be scared that I would somehow manage to fall into one of cracks,
         which, in reality, were way too small for me to fall through. I didn't tell anyone I was scared
         of it, though. I liked going over the bridge. There was a nice breeze that rushed by as I walked 
-        the canal, connecting us to the Atlantic Ocean. 
-        
-        The Ocean Avenue bridge has seen its fair share of trouble. In addition to complications about
+        over the canal, connecting us to the Atlantic Ocean.
+    </p>
+  </div>
+
+  <div class="bgimg-9">
+    <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Canal 2006</span>
+    </div>
+  </div>
+
+  <div class="fade-in" style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>The Ocean Avenue bridge has seen its fair share of trouble. In addition to complications about
         the materials with which it was formed, Hurricane Sandy didn't make it any easier for the bridge. 
         Sheepshead Bay and Manhattan Beach were hit hard by this hurricane. Houses were completely 
-        flooded, cars unrecognizable, power completely shut off, and people in panic. The bridge was no
+        flooded, cars unrecognizable, power completely shut off, and people in a state of panic. The bridge was no
         exception to the chaos. It was a victim of Hurricane Sandy. The bridge was destroyed and had to
-        be repaired. It could not withstand the swift wind-speeds of the roaring hurricane.
+        be repaired. It could not withstand the swift wind-speeds of the roaring hurricane. My walks to 
+        Manhattan Beach were put on pause until further notice, notice that took months to come.
     </p>
+  </div>
+
+  <div class="bgimg-4">
+    <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Before Hurricane Sandy</span>
+    </div>
+  </div>
+
+  <div class="bgimg-2">
+    <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">After Hurricane Sandy</span>
+    </div>
+  </div>
+
+  <div class="fade-in" style="color: rgb(119, 119, 119);background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>However, when it was finally rebuilt, I saw the opportunity to create new memories.
+        Sure, maybe I didn't seem like the same person I was before; I was older, but
+        that didn't mean I couldn't take advantage of my new situations in life. Walks with 
+        my grandma to Manhattan Beach turned into walks with my friends. I didn't have many
+        friends that lived near me, but after convincing them of the uniqueness of this bridge
+        and neighborhood as a whole, they came through and were far from dissapointed. 
+    </p>
+  </div>
+  <div class = "pagebutton">
+    <p class = "btn"><a href="statement.html" class="link">Motivations</a></p>
   </div>
 
 <div class="bgimg-1">
@@ -203,5 +286,26 @@ h3 {
   </div>
 </div>
 
+<script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+        threshold: 1,
+        //rootMargin: "0px 0px -100px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver
+    (function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting){
+                return;
+            } else{
+                entry.target.classList.add('appear');
+                appearOnScroll.unobserve(entry.target);
+            }
+        })
+    }, appearOptions);
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    })
+</script>
 
 </body></html>

@@ -9,13 +9,15 @@ body, html {
   color: #777;
 }
 
-.fade-in {
-    opacity:0;
-    transition: opacity 250ms ease-in;
-}
+@media (min-device-width: 1024px){
+    .fade-in {
+        opacity:0;
+        transition: opacity 250ms ease-in;
+    }
 
-.fade-in.appear {
-    opacity: 1;
+    .fade-in.appear {
+        opacity: 1;
+    }
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
